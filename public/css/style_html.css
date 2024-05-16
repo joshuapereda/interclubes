@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/** Globales **/
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+/** Utilidades **/
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+.seccion {
+    margin-top: 1.8rem;
+    margin-bottom: 0rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+.texto-header {
+    color: black;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.texto-header p {
+    font-size: 2rem;
+}
+@media (max-width: 768px){
+    .texto-header p {
+        font-size: 1.3rem;
+    }
+}
+
+/** Equipos Galeria **/
+#galeria {
+    margin: 1rem auto;
+    width:100%;
+    max-width:960px;
+    column-count: 5;
+}
+.titulo_club {
+    -webkit-column-span:all;
+    column-span:all;
+}
+.no_txt_corte {
+    text-align: center;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.no_txt_corte img {
+    width: 200px;
+    height: 300px;
+    object-fit:  contain; /*cover;*/
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) { 
+    #galeria {
+        columns:2;
+    }
+}      
+
+/* Móviles en vertical */
+@media (max-width: 480px) {
+    #galeria {
+        columns: 1;
+    }
+}

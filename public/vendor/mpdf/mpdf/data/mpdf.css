@@ -1,0 +1,65 @@
+/* LISTS */
+
+/*
+A default margin-top/bottom for lists is NOT set in config.php - (standard browsers give outermost list a top and bottom margin).
+[mPDF default CSS set in configuration only works on basic elements, cannot do selectors such as "ol ol"]
+Need to add the following to do this, but also prevent margins in nested lists as per default HTML in most browsers:
+*/
+.tabla {text-align: left; font-size: 12px; width: 100%; margin-right: -10px;margin-left: -10px; background: #000;color: #fff;}
+.tabla  td {
+	border:#fff;
+	padding: 0;
+	}
+	table {
+	border: 1px solid #fff;
+	}
+.top{margin-top: 50px;}
+p{font-size: 14px;margin: 0; margin-bottom: 5px;margin-top: 5px;}
+h3{float: right;text-align: center;padding: 2%;font-weight: normal;}
+.logo{float: left;}
+.supplierlogo{position: absolute; top: 130px;font-size: 13px;}
+.addresslogo{position: absolute; top: 150px;font-size: 13px;}
+.logo-whyne{float:right ; 	
+	width: 200px;margin-right: 20px;}
+	.qrimg{float:right ; 
+		text-align: right;
+		 margin-top: 40px; 
+		width: 280px;margin-right: 20px;}
+table {
+	width: 100%;
+	font-size: 12px;	
+	border-collapse: collapse;
+  }
+  
+  th {
+	padding: 5px;
+	border: 1px solid black;
+	font-weight: bold;
+	background-color: #0A0A2A;
+	color: white;
+  }
+  
+  td{padding: 5px;}
+  .hash{text-align: center;}
+  .pie{border: 1px solid;padding: 5px;}
+ul, ol {
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+}
+.AdditionalMonetary{
+	font-size: 13px;
+	width: 310px;	
+	float: right;			
+}
+.left{ width: 199;float: left;text-align: right;margin: 0;margin-bottom: 2px;}
+.right{ width: 99px;float: right;text-align: right;margin: 0;margin-bottom: 2px;}
+
+ul ul, ul ol, ol ul, ol ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
