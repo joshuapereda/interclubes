@@ -67,7 +67,7 @@
         </div>
     <?php endforeach; ?>
 </div><br>
-<div class="row bg-gris">
+<div class="row bg-gris mb-5">
     <div class="col-md-8">
         <div class=" bg-gris"> <br>
             <h3 class="text-center">Noticias</h3>

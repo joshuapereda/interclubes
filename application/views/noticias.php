@@ -78,7 +78,7 @@
                 width: calc(50% - 20px);
                  margin-right: 10px; 
             }
-            h2{
+            h4{
               font-size: 25px;
             }
             p{
@@ -98,7 +98,7 @@
              width: calc(50% - 20px);
                  margin-right: 10px; 
             }
-            h2{
+            h4{
               font-size: 25px;
             }
             p{
@@ -119,7 +119,7 @@
              width: calc(50% - 20px);
                  margin-right: 10px; 
             }
-            h2{
+            h4{
               font-size: 25px;
             }
             p{
@@ -145,7 +145,7 @@
                 padding: 0 10px;
                 margin: 10px;
             }
-            h2{
+            h4{
               font-size: 20px;
             }
             
@@ -163,7 +163,7 @@
     <div class="card">
       <img src="public/img/loginnn.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>
@@ -172,7 +172,7 @@
     <div class="card">
       <img src="public/img/noticias3.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>
@@ -180,7 +180,7 @@
     <div class="card">
       <img src="public/img/noticias4.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>
@@ -193,7 +193,7 @@
     <div class="card">
       <img src="public/img/noticias5.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>
@@ -202,7 +202,7 @@
     <div class="card">
       <img src="public/img/noticias6.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>
@@ -210,7 +210,7 @@
     <div class="card">
       <img src="public/img/noticias7.jpg" alt="Imagen 1" class="card-img">
       <div class="card-content">
-        <h2 class="card-title">Noticias InterClubes</h2>
+        <h4 class="card-title">Noticias InterClubes</h4>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="card-button">Botón 1</button>
       </div>

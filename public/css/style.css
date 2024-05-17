@@ -3,7 +3,12 @@
 	padding:0;
 	margin:0;
 }
-
+@font-face {
+    font-family: 'galano';
+    src: url('../fonts/5581galano.woff2') format('woff2'),
+         url('../fonts/5581galano.woff') format('woff');
+    font-weight: 600; font-style: normal; font-display: auto;
+}
 /*** Aqui Alex Metio mano y la cago **/
 .container {
     margin-top: 0px;
@@ -14,13 +19,13 @@
 }
 .carousel-inner img {
     width: 100%;
-    max-height: 880px /**460px**/
+    height: 748px /**460px**/
 }
 @media (max-width: 768px ){
     .carousel-inner img {
         width: 100%;
         max-height: 460px
-    }  
+    }
 }
 .carousel-control {
     width: 0;
@@ -85,8 +90,6 @@
 
 .container{
     background: rgba(255,255,255,0.6);    
-    padding-right: 0 !important;
-    padding-left: 0px !important; 
 }
 .navbar-brand{
     /*width: 100%;*/
@@ -642,7 +645,7 @@ text-transform: uppercase;
 
 /*FOODER*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
+footer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -832,7 +835,7 @@ text-transform: uppercase;
   .contenedorr img {
     width: 100%; 
     display: block;
-    max-height: 630px; 
+    max-height: 495px; 
   }
   .contenedorr::after {
     content: '';
@@ -852,13 +855,11 @@ text-transform: uppercase;
 .titulo2 {
     margin-right: 20px; /* Espacio a la derecha del elemento */
     text-align: left; /* Alinear texto a la izquierda */
-    padding: 40px 0px 40px 0px;  
+    padding: 20px 0px 20px 0px;  
 }
 p {
-    font-size: 25px;
     margin-bottom: 20px;
     line-height: 1.5;
-    max-width: 900px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
@@ -914,12 +915,14 @@ p {
 
 .nombre {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 20px;
+    
 }
 
 .cargo {
     text-align: right;
-    margin-right: 40px;
+    margin-right: 10px;
+    
 }
 /*T....................*/
 .display_block{
@@ -928,6 +931,11 @@ p {
 }
 
 @media (max-width: 992px) {
+    .directivos-sm {
+        display: block !important;
+    }.directivos-lg {
+        display: none !important;
+    }
     .menu-pc{
         display: none;
     }
@@ -968,6 +976,27 @@ p {
         display: block;
         z-index: 1029;
    }
+   .texto-img {
+    font-size: 30px;
+   }
+   .textoo {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 1;
+    color: white;
+}
+.nombre {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 14px; 
+}
+
+.cargo {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;    
+}
 }
 .bg-black{
     background-color: #000;
@@ -979,4 +1008,87 @@ p {
 .mxy-5{
     margin-top: 35px;
     margin-right: 10px;
+}
+h1,h2,h3,h4{
+     font-family: 'galano' !important;
+}
+.sc_heading {
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 42px;
+    padding-bottom: 19px;
+}
+.sc_heading  .line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: #333;
+        width: 35px;
+    }
+.text-small{
+    font-size: 14px;
+}
+table#wpdtSimpleTable-21 {
+    table-layout: fixed !important;
+}
+body table, body td, body tr {
+    border-color: #eee;
+}
+
+table, td, tr {
+    border: 1px #ccc solid;
+}
+.wpdt-c.wpDataTableContainerSimpleTable {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable {
+    font-size: inherit;
+}
+.wpdt-c.wpDataTablesWrapper table.wpdtSimpleTable, .wpdt-c .wpDataTablesWrapper table.wpDataTable {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable {
+    display: table;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    table-layout: auto;
+    overflow: auto;
+    text-align: center;
+}
+.wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable th, .wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody td, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable th, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody td {
+    background-color: #fff;
+}
+.wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody tr.even td.wpdt-cell, .wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody tr.odd td.wpdt-cell, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody tr.even td.wpdt-cell, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody tr.odd td.wpdt-cell, .wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable th, .wpdt-c.wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody td, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable th, .wpdt-c .wpDataTableContainerSimpleTable .wpdtSimpleTable.wpDataTable tbody td {
+    border: 1px solid #ccc;
+    height: 22px;
+    empty-cells: show;
+    line-height: normal;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    word-break: normal;
+}
+.wpDataTablesWrapper table.wpDataTable > tbody > tr > td {
+    border: none !important;
+}
+.wpDataTablesWrapper table.wpDataTable > tbody > tr > td {
+    border: none !important;
+}
+.wpdt-cell {
+    display: inline-block;
+    height: 50px !important;
+}
+.wpdt-fs-000014 {
+    font-size: 14px !important;
+    display: inline-block;
+    height: 50px !important;
 }

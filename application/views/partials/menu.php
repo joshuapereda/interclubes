@@ -18,7 +18,7 @@
                     Nosotros
                 </a>
                 <div class="dropdown-menu color-texto" aria-labelledby="navbarDropdownMenuLink">
-                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>juntadirectiva">Junta Directiva</a>
+                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>juntaDirectiva">Junta Directiva</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>proposito">Propósito</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>noticias">Noticias</a>
                 </div>
