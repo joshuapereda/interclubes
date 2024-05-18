@@ -73,82 +73,65 @@
   color: #fff;
 }
 /*MEDIA QUERY*/
-@media screen and (max-width: 1300px) {
-            .card {
-                width: calc(50% - 20px);
-                 margin-right: 10px; 
-            }
-            h4{
-              font-size: 25px;
-            }
-            p{
-              font-size: 15px;
-            }
-            button{
-              width: 100px;
-              height: 40px;
-            }
-            .page{
-              height:75px;
-              width: 55px;
-            }
-        }
-@media screen and (max-width: 1200px) {
-         .card {
-             width: calc(50% - 20px);
-                 margin-right: 10px; 
-            }
-            h4{
-              font-size: 25px;
-            }
-            p{
-              font-size: 15px;
-            }
-            button{
-              width: 100px;
-              height: 40px;
-            }
-            .page{
-              height:75px;
-              width: 55px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
+       
+        @media screen and (max-width: 700px) {
+          .card-container {
+            flex-direction: column;
+            align-items: center;
+          }
           .card {
-             width: calc(50% - 20px);
-                 margin-right: 10px; 
-            }
-            h4{
-              font-size: 25px;
-            }
-            p{
-              font-size: 13px;
-            }
-            button{
-              font-size: 16px;
-              width: 100px;
-              height: 40px;
-            }
-            .page{
-              height:60px;
-              width: 45px;
-            }
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+          }
+          h4{
+            font-size: 20px;
+          }
+          p{
+            font-size: 13px;
+          }
+          .card-button {
+            font-size: 13px;
+            width: 90px;
+            height: 40px;
+          }
+          .page {
+            height: 60px;
+            width: 45px;
+          }
+          .center-container {
+            padding: 0 10px;
+            margin: 10px 0;
+          }
         }
 
-        @media screen and (max-width: 576px) {
-            .card {
-                width: calc(100% - 20px);
-                margin: 10px;
-            }
-            .center-container {
-                padding: 0 10px;
-                margin: 10px;
-            }
-            h4{
-              font-size: 20px;
-            }
-            
+        @media screen and (max-width: 428px) {
+          .card-container {
+            flex-direction: column;
+            align-items: center;
+          }
+          .card {
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+          }
+          h4{
+            font-size: 20px;
+          }
+          p{
+            font-size: 13px;
+          }
+          .card-button {
+            font-size: 13px;
+            width: 90px;
+            height: 40px;
+          }
+          .page {
+            height: 60px;
+            width: 45px;
+          }
+          .center-container {
+            padding: 0 10px;
+            margin: 10px 0;
+          }
         }
 </style>
 <div class="contenedorr">

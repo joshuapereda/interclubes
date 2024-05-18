@@ -29,10 +29,10 @@
                 </a>
                 <div class="dropdown-menu color-texto" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item color-texto" href="">Categorías</a>
-                    <a class="dropdown-item color-texto" href="">Clubes</a>
-                    <a class="dropdown-item color-texto" href="">Bases</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaposiciones">Resultados</a>
-                    <a class="dropdown-item color-texto" href="">Tabla de posiciones</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
                     <a class="dropdown-item color-texto" href="">Estadísticas</a>
                 </div>
             </li>
@@ -49,7 +49,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li class="nav-item dropdown dropdown-submenu">
                                 <a class="dropdown-item color-texto" href="#">Categorías</a>
-                                <a class="dropdown-item color-texto" href="#">Clubes</a>
+                                <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
                                 <a class="dropdown-item color-texto" href="#">Bases</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>

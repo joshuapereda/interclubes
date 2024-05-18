@@ -754,9 +754,9 @@ footer{
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .btn-wsp {
-        width: 63px;
-        height: 63px;
-        line-height: 66px;
+         width: 53px;
+        height: 53px;
+        line-height: 56px;
         bottom: 80px;
         font-size: 25px;
     }
@@ -786,9 +786,9 @@ footer{
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .btn-smg.btn-smg-second {
-        width: 63px;
-        height: 63px;
-        line-height: 66px;
+        width: 53px;
+        height: 53px;
+        line-height: 56px;
         bottom: 25px;
         font-size: 25px;
     }
@@ -1004,10 +1004,6 @@ p {
 }
 .logo-menu-mobile{
     width: 250px;
-}
-.mxy-5{
-    margin-top: 35px;
-    margin-right: 10px;
 }
 h1,h2,h3,h4{
      font-family: 'galano' !important;

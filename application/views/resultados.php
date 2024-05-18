@@ -1,3 +1,9 @@
+<div class="contenedorr">
+    <div class="textoo">
+        <h1 class="texto-img">| CLUBES</h1>
+    </div>
+    <img src="public/img/portada5.jpg" alt="">
+</div><br>
 <?php $CI = &get_instance(); ?>
 <div class="row">
     <div id="ultimate_kickoff_fixture-5" class=" table t_general widget widget_ultimate_kickoff_fixture kode-widget">

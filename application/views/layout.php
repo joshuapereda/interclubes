@@ -43,7 +43,7 @@
     <div class="row">
     </div>
     <!--BOTON FLOTANTE-->
-    <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+    <a href="" class="btn-wsp" target="_blank">
     <i class="bi bi-whatsapp cw"></i>
 	</a>
     <a href="#" class="btn-smg btn-smg-second" target="_blank">
