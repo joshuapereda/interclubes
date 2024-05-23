@@ -76,6 +76,7 @@
 
 
 <nav style="display: none;" class="navbar navbar-expand-lg navbar-dark bg-black justify-content-sm-start  menu-mobile">
+  
   <a class="navbar-brand order-0 order-lg-0 ml-lg-0 mr-2" href="<?php echo base_url(); ?>">
     <img class="img-fluid logo-menu-mobile" src="<?php echo base_url() . 'public/img/logo_inter_clubes.png'; ?>">  
   </a>
@@ -85,6 +86,9 @@
 
   <div class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-lg-0 justify-content-lg-end  d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight" id="navbarSupportedContent">
     <ul class="navbar-nav align-self-stretch">
+      <li class="text-right">
+        <a class="h1 navbar-toggler navbar-toggler-close" type="button"><i class="fa fa-close text-white"></i></a>
+      </li>
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url(); ?>">Inicio</a>
       </li>
@@ -93,10 +97,9 @@
           Nosotros
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>juntaDirectiva">Junta Directiva</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>proposito">Propósito</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>noticias">Noticias</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -104,10 +107,12 @@
           Apertura 2024
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item color-texto" href="">Categorías</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
+                    <a class="dropdown-item color-texto" href="">Estadísticas</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -115,10 +120,12 @@
           Campeonatos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item color-texto" href="">Categorías</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
+                    <a class="dropdown-item color-texto" href="">Estadísticas</a>
         </div>
       </li>
       

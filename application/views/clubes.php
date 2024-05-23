@@ -63,7 +63,7 @@
     background-color: black;
 }
 @media screen and (max-width: 576px){
-    button{
+    button.view-team{
         width: 140px;
         font-size: 10px;
     }
@@ -88,7 +88,7 @@
     color: #333;
 }
 @media screen and (max-width: 428px){
-    button{
+    button.view-team{
         width: 120px;
         font-size: 10px;
     }

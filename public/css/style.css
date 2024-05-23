@@ -940,6 +940,7 @@ p {
         display: none;
     }
     .menu-mobile{
+       
         display: block !important;
     }
     .mobileMenu {
@@ -957,6 +958,7 @@ p {
         transform: translateX(100%);
    }
     .mobileMenu.open {
+        width:300px ;   
         transform: translateX(0%);
    }
     .mobileMenu .navbar-nav {
@@ -1087,4 +1089,10 @@ table, td, tr {
     font-size: 14px !important;
     display: inline-block;
     height: 50px !important;
+}
+.navbar-toggler-close{
+    padding: .25rem .75rem;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
 }
