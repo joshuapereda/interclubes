@@ -249,10 +249,8 @@ body h6 {
 }
 .dropdown-menu {
     background: #a01010;
-    width: 300px; /* Ancho de la caja del menú desplegable */
-    padding: 10px; /* Espacio interno alrededor del contenido del menú */
-    margin-top: 10px; /* Espacio entre el menú desplegable y el elemento que lo activa (en este caso, el enlace "NOSOTROS") */
-}
+    width: 205px ; 
+    margin-top:5px ; 
 
 .dropdown-item {
     padding: 8px 20px; /* Espacio interno dentro de cada elemento del menú */

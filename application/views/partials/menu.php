@@ -25,10 +25,10 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link link-hover dropdown-toggle tipografia" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Apertura 2024
+                <?=  $torneo[0]->Nombre; ?>
                 </a>
                 <div class="dropdown-menu color-texto" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item color-texto" href="">Categorías</a>
+                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>categoria">Categorías</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
@@ -44,11 +44,12 @@
                     
                     <ul class="show" aria-labelledby="navbarDropdownMenuLink">
                    <!-- <a class="dropdown-item color-texto" href="">Clubes</a>-->
-                    <li class="nav-item dropdown dropdown-submenu">
-                        <a class="dropdown-item">Selecciona Campeonato </a>
+                   <?php foreach($torneosAnteriores as $row): ?> 
+                   <li class="nav-item dropdown dropdown-submenu">
+                        <a class="dropdown-item"><?= $row->Nombre; ?> </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li class="nav-item dropdown dropdown-submenu">
-                                <a class="dropdown-item color-texto" href="#">Categorías</a>
+                                <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>categoria">Categorías</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
                                 <a class="dropdown-item color-texto" href="#">Bases</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
@@ -57,7 +58,7 @@
                             </li>
                         </ul>
                     </li>
-
+                    <?php endforeach; ?>
                 </ul>
                 </div>
             </li>
@@ -104,7 +105,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Apertura 2024
+        <?=  $torneo[0]->Nombre; ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item color-texto" href="">Categorías</a>
