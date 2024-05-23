@@ -30,46 +30,12 @@ class Home_model extends CI_Model
         $query = $this->db->get('comision');
         return $query->result();
     }
-    function getCategorias_ult($id_torneo)
-    {
-        $this->db->distinct();
-        $this->db->select('categorias.categoria,categoriasxtorneo.id,categorias.sub_cat,id_torneo');
-        $this->db->from("categoriasxtorneo");
-        $this->db->join('categorias', 'categorias.id = categoriasxtorneo.id_categoria and categoriasxtorneo.estado="A"');
-        $this->db->where('categoriasxtorneo.estado','A');
-        $this->db->where('categorias.sub_cat','NO');
-        $this->db->where('categorias.id_torneo',$id_torneo);
-        $query1 = $this->db->get_compiled_select();      
-        
-        $this->db->distinct();
-        $this->db->select('categorias.categoria,categorias.id,categorias.sub_cat,id_torneo');
-        $this->db->from("categorias");        
-        $this->db->where('categorias.estado','A');
-        $this->db->where('categorias.sub_cat','SI');
-        $this->db->where('categorias.id_torneo',$id_torneo);
-        $query2 = $this->db->get_compiled_select();    
-        
-        $query = $this->db->query($query1." UNION ".$query2."ORDER BY id ASC");
-
+    function getTorneo(){                     
+        $query = $this->db->get('V_Torneo_Actual');
         return $query->result();
     }
-    function getCategoriasId($id){
-        $this->db->select('categoriasxtorneo.*,id_torneo');
-        $this->db->join('categorias', 'categorias.id = categoriasxtorneo.id_categoria and categoriasxtorneo.estado="A"');
-        $this->db->where('categoriasxtorneo.estado', 'A');
-        $this->db->where('categoriasxtorneo.id', $id);
-        $query = $this->db->get('categoriasxtorneo');
-        return $query->result();
-    }
-    function getTorneo(){
-        $this->db->where('estado', 'A');                  
-        $query = $this->db->get('torneo');
-        return $query->result();
-    }
-    function getTorneoId($id_torneo){
-        $this->db->where('estado', 'A');    
-        $this->db->where('id', $id_torneo);        
-        $query = $this->db->get('torneo');
+    function getTorneosAnteriores(){                     
+        $query = $this->db->get('V_Torneos_Anteriores');
         return $query->result();
     }
     function getSubCategorias($id_categoria)
