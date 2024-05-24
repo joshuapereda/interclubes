@@ -125,33 +125,15 @@
     <img src="public/img/portada5.jpg" alt="">
 </div>
 <div class="team-container">
+    <h2>CATEGORÍA <?= $data[0]->categoria; ?></h2>
+<?php foreach($data as $row): ?>
         <div class="team">
-        <img src="public/img/EQUIPO1.png" alt="Imagen 1" class="card-img team-logo">
+        <img src="<?= $row->logo; ?>" alt="Imagen 1" class="card-img team-logo">
             <div class="team-info">
-                <h2>COMERCIANTES UNIDOS</h2> <br>
+                <h2><?= $row->nombre; ?></h2> <br>
                 <button class="view-team">VER EQUIPO</button>
             </div>
         </div>
-        <div class="team">
-        <img src="public/img/EQUIPO2.png" alt="Imagen 1" class="card-img team-logo">
-            <div class="team-info">
-                <h2>DEPORTIVO LOS CHANKAS</h2><br>
-                <button class="view-team">VER EQUIPO</button>
-            </div>
-        </div>
-        <div class="team">
-        <img src="public/img/EQUIPO3.png" alt="Imagen 1" class="card-img team-logo">
-            <div class="team-info">
-                <h2>DEPORTIVO COOPSOL</h2><br>
-                <button class="view-team">VER EQUIPO</button>
-            </div>
-        </div>
-        <div class="team">
-        <img src="public/img/EQUIPO4.png" alt="Imagen 1" class="card-img team-logo">
-            <div class="team-info">
-                <h2>JUAN AURICH</h2><br>
-                <button class="view-team">VER EQUIPO</button>
-            </div>
-        </div>
-    </div>
+<?php endforeach; ?>
+</div>
 </div>
