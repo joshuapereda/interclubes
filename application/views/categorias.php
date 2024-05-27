@@ -70,11 +70,15 @@
 <br>
 <div class="container">
   <?php foreach($data as $row): ?>
+    
     <div class="contenedorrr">
+    <a href="clubes?id_categoria=<?= $row->id_categoria; ?>">
       <div class="textooo">
         <h1 class="textooo-img cl"><?= $row->categoria; ?></h1>
       </div>
       <img src="public/img/login.jpg" alt="">
+      </a>
     </div>
+   
   <?php endforeach; ?>
 </div>

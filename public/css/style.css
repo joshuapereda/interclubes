@@ -249,9 +249,9 @@ body h6 {
 }
 .dropdown-menu {
     background: #a01010;
-    width: 300px; /* Ancho de la caja del menú desplegable */
+    width: 260px; /* Ancho de la caja del menú desplegable */
     padding: 10px; /* Espacio interno alrededor del contenido del menú */
-    margin-top: 10px; /* Espacio entre el menú desplegable y el elemento que lo activa (en este caso, el enlace "NOSOTROS") */
+    margin-top: 0px; /* Espacio entre el menú desplegable y el elemento que lo activa (en este caso, el enlace "NOSOTROS") */
 }
 
 .dropdown-item {
@@ -596,7 +596,7 @@ a.dropdown-item{
 }
 .dropdown-submenu>.dropdown-menu {
     top:0;
-    left:100%;
+    left:80%;
     margin-top:-6px;
 }
 
@@ -960,6 +960,7 @@ p {
     .mobileMenu.open {
         width:300px ;   
         transform: translateX(0%);
+        width: 260px;
    }
     .mobileMenu .navbar-nav {
         overflow-y: auto;
@@ -997,7 +998,15 @@ p {
 .cargo {
     text-align: right;
     margin-right: 10px;
-    font-size: 14px;    
+    font-size: 14px;   
+
+}
+.navbar-nav .nav-item {
+    margin-right: 5px !important;
+}
+.btn-close{
+    border: none;
+    font-size: 1.5em;
 }
 }
 .bg-black{

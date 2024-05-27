@@ -29,7 +29,6 @@
                 </a>
                 <div class="dropdown-menu color-texto" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>categoria">Categorías</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
@@ -41,17 +40,14 @@
                     Campeonatos
                 </a>
                 <div class="dropdown-menu color-texto" aria-labelledby="navbarDropdownMenuLink">
-                    
                     <ul class="show" aria-labelledby="navbarDropdownMenuLink">
-                   <!-- <a class="dropdown-item color-texto" href="">Clubes</a>-->
                    <?php foreach($torneosAnteriores as $row): ?> 
                    <li class="nav-item dropdown dropdown-submenu">
                         <a class="dropdown-item"><?= $row->Nombre; ?> </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li class="nav-item dropdown dropdown-submenu">
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>categoria">Categorías</a>
-                                <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
-                                <a class="dropdown-item color-texto" href="#">Bases</a>
+                                <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
                                 <a class="dropdown-item color-texto" href="#">Estadísticas</a>
@@ -87,8 +83,8 @@
 
   <div class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-lg-0 justify-content-lg-end  d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight" id="navbarSupportedContent">
     <ul class="navbar-nav align-self-stretch">
-      <li class="text-right">
-        <a class="h1 navbar-toggler navbar-toggler-close" type="button"><i class="fa fa-close text-white"></i></a>
+    <li class="nav-item text-right">
+        <a class="nav-link navbar-toggler btn-close" ><i class="fa fa-close"></i></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url(); ?>">Inicio</a>
@@ -98,9 +94,9 @@
           Nosotros
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>juntaDirectiva">Junta Directiva</a>
-            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>proposito">Propósito</a>
-            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>noticias">Noticias</a>
+          <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>juntaDirectiva">Junta Directiva</a>
+          <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>proposito">Propósito</a>
+          <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>noticias">Noticias</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -108,25 +104,21 @@
         <?=  $torneo[0]->Nombre; ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item color-texto" href="">Categorías</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-                    <a class="dropdown-item color-texto" href="">Estadísticas</a>
-        </div>
+        <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>categoria">Categorías</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
+            <a class="dropdown-item color-texto" href="">Estadísticas</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Campeonatos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item color-texto" href="">Categorías</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>clubes">Clubes</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
-                    <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-                    <a class="dropdown-item color-texto" href="">Estadísticas</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
+            <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
+            <a class="dropdown-item color-texto" href="">Estadísticas</a>
         </div>
       </li>
       
