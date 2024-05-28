@@ -1,6 +1,21 @@
+<style>
+ #ultimate_kickoff_fixture-5 {
+    width: 45%; /* Tamaño de la pantalla */
+    margin: 0 auto; 
+}
+
+.fixture {
+    max-width: 100%; 
+}
+
+
+#ultimate_kickoff_fixture-5 {
+    margin-top: 50px;
+}
+</style>
 <div class="contenedorr">
     <div class="textoo">
-        <h1 class="texto-img">| CLUBES</h1>
+        <h1 class="texto-img">| RESULTADOS</h1>
     </div>
     <img src="public/img/portada5.jpg" alt="">
 </div><br>
@@ -53,6 +68,7 @@
     </div>
     </div>
 </div>
+<br><br>
 <script>
     $("#cbocategoria").change(function(e) {
         var id_cat = $("#cbocategoria").val();

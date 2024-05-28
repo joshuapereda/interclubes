@@ -21,13 +21,13 @@
   .textooo {
     position: absolute;
     top: 80%; 
-    left: 70px;
+    left: 50px;
     color: white !important;
     z-index: 1;
   }
 
   .textooo-img {
-    font-size: 33px;
+    font-size: 30px;
     font-family: "Roboto", arial, sans-serif;
     font-weight: 700;
     font-style: normal;
