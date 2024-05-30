@@ -131,7 +131,7 @@
         <img src="<?= $row->logo; ?>" alt="Imagen 1" class="card-img team-logo">
             <div class="team-info">
                 <h2><?= $row->nombre; ?></h2> <br>
-                <button class="view-team">VER EQUIPO</button>
+                <a href="<?php echo base_url(); ?>jugadores"><button class="view-team" >VER EQUIPO</button></a>
             </div>
         </div>
 <?php endforeach; ?>

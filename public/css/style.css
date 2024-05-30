@@ -271,14 +271,15 @@ body h6 {
     background-color:#f1f1f1;
 }
 .bg-image-resumen{
-    background-image: url("../img/fondo-resumen.jpg");
+    margin-top: 0px;
+    background-image:url("../img/rrrrrr.jpg")!important;
     background-size: cover;
 }
 .bg-image-resumen h1{
     font-size: 3.5em;
 }
 .bg-image-resumen .container{
-    padding: 4%;
+    padding: 4% ;
     color: #fff;
     background-color: transparent; 
     background-position: center;

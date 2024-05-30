@@ -32,7 +32,7 @@
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
                     <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-                    <a class="dropdown-item color-texto" href="">Estadísticas</a>
+                    <a class="dropdown-item color-texto"href="<?php echo base_url(); ?>estadisticas">Estadísticas</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -50,7 +50,7 @@
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
                                 <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-                                <a class="dropdown-item color-texto" href="#">Estadísticas</a>
+                                <a class="dropdown-item color-texto"href="<?php echo base_url(); ?>estadisticas">Estadísticas</a>
                             </li>
                         </ul>
                     </li>
@@ -108,7 +108,7 @@
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-            <a class="dropdown-item color-texto" href="">Estadísticas</a>
+            <a class="dropdown-item color-texto"href="<?php echo base_url(); ?>estadisticas">Estadísticas</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -118,7 +118,7 @@
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>bases">Bases</a>
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>resultados">Resultados</a>
             <a class="dropdown-item color-texto" href="<?php echo base_url(); ?>tablaPosiciones">Tabla de posiciones</a>
-            <a class="dropdown-item color-texto" href="">Estadísticas</a>
+            <a class="dropdown-item color-texto"href="<?php echo base_url(); ?>estadisticas">Estadísticas</a>
         </div>
       </li>
       
