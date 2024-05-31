@@ -124,14 +124,14 @@
     </div>
     <img src="public/img/portada5.jpg" alt="">
 </div>
-<div class="team-container">
+<div class="team-container">    
     <h2>CATEGORÍA <?= $data[0]->categoria; ?></h2>
 <?php foreach($data as $row): ?>
         <div class="team">
         <img src="<?= $row->logo; ?>" alt="Imagen 1" class="card-img team-logo">
             <div class="team-info">
                 <h2><?= $row->nombre; ?></h2> <br>
-                <a href="<?php echo base_url(); ?>jugadores"><button class="view-team" >VER EQUIPO</button></a>
+                <a href="<?php echo base_url(); ?>jugadores?id_equipo=<?= $row->id_club; ?>&id_subcat=<?= $row->id_subcategoria; ?>"><button class="view-team" >VER EQUIPO</button></a>
             </div>
         </div>
 <?php endforeach; ?>

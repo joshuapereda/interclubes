@@ -13,7 +13,7 @@
 
 .card {
   width: calc(33.33% - 20px);
-  width: 200px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 10px;
@@ -76,8 +76,7 @@ p{
             flex-direction: column;
             align-items: center;
           }
-          .card {
-            width: 180%;
+          .card {            
             margin-bottom: 20px;
           }
           h4{
@@ -107,8 +106,7 @@ p{
             flex-direction: column;
             align-items: center;
           }
-          .card {
-            width: 180%;
+          .card {            
             height: 220px;
             margin-bottom: 20px;
           }
@@ -131,112 +129,26 @@ p{
     <img src="public/img/portada5.jpg" alt="">
 </div>
 <div>
-<div class="center-container">
-  <div class="card-container">
-    
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p> 
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-  </div>
-</div>
+<h3 class="text-center mt-5 mb-3"><?= $data[0]->nombre_club ?></h3>
 
 <div class="center-container">
-  <div class="card-container">
-    
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
+    <div class="card-container">
+        <div class="row">
+          <?php foreach($data as $row): ?>
+            <div class="col-md-3 mt-5">
+                <div class="card">
+                    <img src="public/img/goleadores.svg" alt="Imagen 1" class="card-img">
+                    <div class="card-content">
+                        <h4 class="card-title text-center"><?= $row->apellidos_nombres; ?></h4>
+                        <p class="card-text"><?= $row->nombre_club; ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-      <h4 class="card-title">Paolo Guerrero</h4>
-      <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-    <div class="card">
-    <img src="public/img/goleadores.svg"alt="Imagen 1" class="card-img">
-      <div class="card-content">
-        <h4 class="card-title">Paolo Guerrero</h4>
-        <p class="card-text">Alianza Lima</p>
-      </div>
-    </div>
-
-  </div>
 </div>
+
+
 </div>
 <br><br><br>
