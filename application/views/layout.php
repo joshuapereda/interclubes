@@ -1,3 +1,99 @@
+<style>
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#btn-mas {
+    display: none;
+}
+
+.containerrrrr {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Cambiado de right a left */
+    z-index: 1000; /* Asegurar que esté por encima del footer */
+}
+
+.redes a, .btn-mas label {
+    display: block;
+    text-decoration: none;
+    background: #cc2b2b;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+
+.redes a:hover {
+    background: #fff;
+    color: #cc2b2b;
+}
+
+.redes a {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked ~ .redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-mas label {
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-mas:checked ~ .btn-mas label {
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+
+.redes1 a {
+    background: #084AEE;
+    color: #fff;
+}
+
+.redes1 a:hover {
+    background: #3769E5;
+    color: #fff;
+}
+
+.redes2 a {
+    background: #00B2FF;
+    color: #fff;
+}
+
+.redes2 a:hover {
+    background: #2C2E2F;
+    color: #fff;
+}
+
+.redes3 a {
+    background: #25D366;
+    color: #fff;
+}
+
+.redes3 a:hover {
+    background: #128C7E;
+    color: #fff;
+}
+
+
+</style>
 <?php $LY = &get_instance(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,20 +139,27 @@
     <div class="row">
     </div>
     <!--BOTON FLOTANTE-->
-    <a href="" class="btn-wsp" target="_blank">
-    <i class="bi bi-whatsapp cw"></i>
-	</a>
-    <a href="#" class="btn-smg btn-smg-second" target="_blank">
-    <i class="bi bi-messenger"></i>
-    </a>
+    <div class="containerrrrr">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+    <div class="redes1">  <a href="#" class="fa fa-facebook fb"></a> </div>
+    <!--<div class="redes2">  <a href="#" class="bi bi-messenger mss"></a></div>-->
+    <div class="redes2">  <a href="#" class="fa fa-twitter tw"></a></div>
+    <div class="redes3">  <a href="#" class="fa fa-whatsapp  wp"></a></div>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="fa fa-message"></label>
+    </div>
+</div>
 
+    
     <!--FOODER-->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img class=" menu-logo" src='<?php echo base_url(); ?>public/img/logo_inter_clubes.png' alt="">
+                        <img class=" fooder-logo" src='<?php echo base_url(); ?>public/img/logo_inter_clubes.png' alt="">
                     </a>
                 </figure>
             </div>

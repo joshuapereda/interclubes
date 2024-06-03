@@ -14,6 +14,7 @@
 .card {
   width: calc(33.33% - 20px);
   width: 100%;
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 10px;

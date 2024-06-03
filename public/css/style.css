@@ -198,20 +198,7 @@ body h6 {
  .fixture .fecha-texto2 {
      background-color: #dd332d;
  }
-.fixture .partido { display: block; width: 100%; float: left; text-align: center; border-width: 0px 0px 1px 0px;
-	border-style: solid; border-color: rgba(0, 0, 0, 0.1); padding-top: 5px; padding-bottom: 5px; background-color: white;}
-.fixture .central { display: block; width: 70%; float: left;}
-.fixture .central-superior { display: block; width: 100%; float: left; padding-top: 4px;}
-.fixture .central-inferior { display: block; width: 100%; float: left; line-height: 0.75; }
-.fixture .central-inferior a { color:#337ab7;  }
-.fixture .hora { display: block; width: 10%; float: left; padding-top: 8px; padding-left: 3px; padding-right: 3px; box-sizing: border-box; font-size: 11px;}
-.fixture .escudo{ display: block; width: 10%; float: left; padding: 4px; box-sizing: border-box;}
-.fixture .escudo img { height: auto; max-width: 40px; width: 100%; min-width: 30px;}
-.fixture .central-superior .nombre-local { display: block; width: 43%; float: left; text-align: left; font-size: 12px; padding-left: 4px; box-sizing: border-box;}
-.fixture .central-superior .versus { display: block; width: 14%; float: left; font-weight: bold;}
-.fixture .central-superior .versus a { font-size: 12px;}
-.fixture .central-superior .nombre-visita { display: block; width: 43%; float: left; text-align: right; font-size: 12px; padding-right: 4px; box-sizing: border-box;}
-.fixture .link_partido { display: block; font-size: 9px; }
+
 
 
 .bg-portada{
@@ -272,8 +259,7 @@ body h6 {
 }
 .bg-image-resumen{
     margin-top: 0px;
-    background-image:url("../img/rrrrrr.jpg")!important;
-    background-size: cover;
+     
 }
 .bg-image-resumen h1{
     font-size: 3.5em;
