@@ -125,7 +125,7 @@
     <img src="public/img/portada5.jpg" alt="">
 </div>
 <div class="team-container">    
-    <h2>CATEGORÍA <?= $data[0]->categoria; ?></h2>
+    <h2>CATEGORÍA <?= $data[0]->subcategoria; ?></h2>
 <?php foreach($data as $row): ?>
         <div class="team">
         <img src="<?= $row->logo; ?>" alt="Imagen 1" class="card-img team-logo">

@@ -72,9 +72,9 @@
   <?php foreach($data as $row): ?>
     
     <div class="contenedorrr">
-    <a href="clubes?id_categoria=<?= $row->id_categoria; ?>">
+    <a href="clubes?id_categoria=<?= $row->id_subcategoria; ?>">
       <div class="textooo">
-        <h1 class="textooo-img cl"><?= $row->categoria; ?></h1>
+        <h1 class="textooo-img cl"><?= $row->subcategoria; ?></h1>
       </div>
       <img src="public/img/login.jpg" alt="">
       </a>

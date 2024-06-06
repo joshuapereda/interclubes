@@ -16,7 +16,7 @@ class Categoria_model extends CI_Model
 
     function getEquiposPorCategoria($id_categoria)
     {
-        $this->db->where('id_categoria', $id_categoria);
+        $this->db->where('id_subcategoria', $id_categoria);
         $query = $this->db->get('v_Torneo_Actual_Club_Categorias');
         return $query->result();
     }
