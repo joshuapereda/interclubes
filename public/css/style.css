@@ -891,7 +891,6 @@ img {
 
 p {
     margin: 0; /* Elimina el margen predeterminado del párrafo */
-    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
 }
 
 .directiva {

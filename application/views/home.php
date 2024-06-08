@@ -1,3 +1,416 @@
+<style>
+    /* ********************************** */
+/*                BLOGS               */
+/* ********************************** */
+.blogs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.container-blogs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-blog {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.card-blog .container-img {
+	border-radius: 2rem;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.button-group-blog {
+	position: absolute;
+	bottom: 1.5rem;
+	right: -2.5rem;
+
+	display: flex;
+	gap: 0.7rem;
+	z-index: -1;
+	transition: all 0.3s ease;
+}
+
+.card-blog:hover .button-group-blog {
+	z-index: 0;
+	right: 1.5rem;
+}
+
+.button-group-blog span {
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-group-blog span i {
+	font-size: 1.3rem;
+}
+
+.button-group-blog span:hover {
+	background-color: var(--primary-color);
+}
+
+.button-group-blog span:hover i {
+	color: #fff;
+}
+
+.content-blog h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	color: var(--dark-color);
+	font-weight: 500;
+}
+
+.content-blog h3:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.content-blog p {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #777;
+}
+
+.content-blog span {
+	color: var(--primary-color);
+	font-size: 1.3rem;
+}
+
+.btn-read-more {
+	padding: 1rem 3rem;
+	background-color: var(--primary-color);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	border-radius: 2rem;
+	margin: 3rem 0 5rem;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.btn-read-more:hover {
+	background-color: var(--dark-color);
+}
+/* ********************************** */
+/*               GALLERY              */
+/* ********************************** */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 30rem);
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery-img-3 {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.category-moca {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('public/img/portada5.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+    
+}
+
+.category-capuchino {
+	background-image: linear-gradient(#00000080, #00000080),
+    url('public/img/portada5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-expreso {
+	background-image: linear-gradient(#00000080, #00000080),
+    url('public/img/portada5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: var(--primary-color);
+}
+ /* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.container-img .discount {
+		font-size: 2rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 20rem);
+	}
+
+	.blogs {
+		padding: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr;
+		height: 75rem;
+	}
+
+	.content-blog h3 {
+		font-size: 2.4rem;
+	}
+
+	.content-blog span {
+		font-size: 1.8rem;
+	}
+
+	.content-blog p {
+		font-size: 2.2rem;
+	}
+
+	.btn-read-more{
+		font-size: 1.8rem;
+	}
+
+	.contact-info ul,
+	.information ul,
+	.my-account ul{
+		display: none;
+	}
+
+	.contact-info {
+		align-items: center;
+	}
+
+	.menu-footer{
+		grid-template-columns: 1fr;
+	}
+
+	.content p{
+		font-size: 1.6rem;
+	}
+}   
+</style>
 <?php $CI = &get_instance(); ?>
 <!--
     <img class="img-fluid" src="<?php echo base_url() . "public/img/portada0.jpg"; ?>">
@@ -45,187 +458,139 @@
 </div>
 
 <!-- Fin Alex metio mano y la cago -->
-<br>
+<br><!--
 <div class="" id="publicaciones">
     <br>
     <hr>
 </div>
-<h3 class="text-center">Publicaciones</h3>
+<h3  class="text-center">Publicaciones</h3>
 <hr><br>
-<div class="row">
+<div class="row">-->
 
-    <?php foreach ($data['publicacion'] as $row) : ?>
+    <!--<?php foreach ($data['publicacion'] as $row) : ?>
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" height="250" src="<?php echo $row->imagen; ?>">
+            <img src="public/img/portada5.jpg" alt="">
+                <img class="card-img-top" height="250" src="<?php echo $row->imagen; ?>"
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row->titulo; ?></h5>
-                    <p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p>
+                    <p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p> <br>
                     <a href="<?php echo base_url() . "publicacion/ver/" . $row->id; ?>" class="btn bg-secundario">Ver más ...</a>
                 </div>
             </div>
         </div>
     <?php endforeach; ?>
-</div><br>
-<div class="row bg-gris mb-5">
-    <div class="col-md-8">
-        <div class=" bg-gris"> <br>
-            <h3 class="text-center">Noticias</h3>
-            <hr>
-            <?php foreach ($data['noticia'] as $row) : ?>
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="item-image">
-                            <img class="card-img-top" style="display: block;" src="<?php echo $row->imagen; ?>">
-                            <div class="wp-tiles-byline">
-                                <!--style="background-color: rgba(0, 0, 0, 0.7); color:#fff !important; max-height: 50%; overflow-wrap: break-word;" -->
-                                <div class="wp-tiles-byline-wrapper">
-                                    <a href="<?php echo base_url() . 'noticia/ver/' . $row->id; ?>">
-                                        <h4 itemprop="name" class="wp-tiles-byline-title"><?php echo $row->titulo; ?> </h4>
-                                    </a>
-                                    <a href="<?php echo base_url() . 'noticia/ver/' . $row->id; ?>">
-                                        <p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</div>--><br><br>
+                <!--PUBLICACIONES-->
+<section class="container blogs">
+				<h1 class="heading-1">Publicaciones</h1>
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+                        <img src="public/img/portada5.jpg" alt="">
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+                        <h3 class="card-title"><?php echo $row->titulo; ?></h3>
+							<span>29 Noviembre 2022</span>
+							<p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p> 
+							<div class="btn-read-more">Leer más</div>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+                        <img src="public/img/portada5.jpg" alt="">
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+                            <h3 class="card-title"><?php echo $row->titulo; ?></h3>
+							<p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p> 
+							<div class="btn-read-more">Leer más</div>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+                        <img src="public/img/portada5.jpg" alt="">
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+                            <h3 class="card-title"><?php echo $row->titulo; ?></h3>
+							<span>29 Noviembre 2022</span>
+							<p class="card-text"><?php echo substr(strip_tags($row->texto), 0, 150); ?>...</p> 
+							<div class="btn-read-more">Leer más</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <?php endforeach; ?>
-        </div>
-        <br>
-    </div>
+             <!--GALERIA FOTOS-->
 
-    <div class="col-md-4">
-        <div id="tabla-posiciones">
-            <br>
-        </div>
-        <h3 class="text-center">Tabla de Posiciones</h3>
-        <hr><br>
-        <table class="table-posicion t_general t_tabla_posiciones_short table-bordered">
-            <thead>
-                <tr class="bg-principal text-white">
-                    <th></th>
-                    <th></th>
-                    <th>Equipo</th>
-                    <th>PJ</th>
-                    <th>PG</th>
-                    <th>PE</th>
-                    <th>PP</th>
-                    <th>GF</th>
-                    <th>GC</th>
-                    <th>DF</th>
-                    <th>PTOS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php $cont = 0;
-                foreach ($data['tabla'] as $row) {
-                    $cont++; ?>
-                    <tr>
-                        <td class="text-right"><?php echo $cont; ?></td>
-                        <td class="text-center"><img class="img-fluid" src="<?php echo $row->logo; ?>"></td>
-                        <td><?php echo $row->Equipo; ?></td>
-                        <td><?php echo $row->PJ; ?></td>
-                        <td><?php echo $row->PG; ?></td>
-                        <td><?php echo $row->PE; ?></td>
-                        <td><?php echo $row->PP; ?></td>
-                        <td><?php echo $row->GF; ?></td>
-                        <td><?php echo $row->GC; ?></td>
-                        <td><?php echo $row->DIF; ?></td>
-                        <td><?php echo $row->PTS; ?></td>
-                    </tr>
-                <?php
-            } ?>
-        </table><br>
-        <div id="ultimate_kickoff_fixture-5" class=" table t_general widget widget_ultimate_kickoff_fixture kode-widget">
-            <br>
+            <section class="gallery">
+				<img
+					src="public/img/noticias1.jpg"
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src="public/img/noticias2.jpg"
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src="public/img/noticias3.jpg"
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src="public/img/noticias4.jpg"
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src="public/img/noticias5.jpg"
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
 
-            <h3 class="text-center">Últimos Resultados</h3>
-            <hr><br>
-            <!-- <h6 class="kf_h5"><span>Liga1 – Fecha 05</span></h6> -->
-            <div class="clear clearfix"></div>
-            <div class="kode-sidebar">
-                <div class="kf_border">
-                    <div class="fixture">
-                        <?php foreach ($data['resultados_cabecera'] as $r) { ?>
-                            <div class="fecha-texto"><?php echo $CI->obtenerFechaEnLetra($r->fecha); ?></div>
-                            <?php $resultados = $CI->getResultados($r->NRO_FECHA, $r->id_subcat);
-                            foreach ($resultados as $row) { ?>
-                                <div class="partido">
-                                    <div class="hora"><?php echo $row->hora; ?></div>
-                                    <div class="escudo"><img src="<?php echo $row->logo_local; ?>"></div>
-                                    <div class="central">
-                                        <div class="central-superior">
-                                            <div class="nombre-local"><?php echo $row->equipo_local; ?></div>
-                                            <div class="versus"><a href="<?php echo base_url(); ?>partido/resumen/<?php echo $row->id; ?>">
-                                                    <?php echo $row->result_local . '-' . $row->result_visita; ?></a>
-                                            </div>
-                                            <div class="nombre-visita"><?php echo $row->equipo_visita; ?></div>
-                                        </div>
-                                        <div class="central-inferior">
-                                            <a href="<?php echo base_url(); ?>partido/resumen/<?php echo $row->id; ?>" class="link_partido">Resumen</a>
-                                        </div>
-                                    </div>
-                                    <div class="escudo"><img src="<?php echo $row->logo_visita; ?>"></div>
-                                </div> <?php }
-                            } ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </table><br><br>
-        <?php if($data['ProximaFechasCabecera']!=null) {  ?>
-        <div id="ultimate_kickoff_fixture-5" class=" table t_general widget widget_ultimate_kickoff_fixture kode-widget">
-            <div id="prox-fecha"></div>
-            <div class="clear clearfix"></div><br><br>
-                            
-            <!-- <h6 class="kf_h5"><span>Liga1 – Fecha 05</span></h6> -->
-            <h3 class="text-center">Próximas Fechas</h3>
-            <hr><br>
-            <div class="kode-sidebar">
-                <div class="kf_border">
-                    <div class="fixture">
-                        <?php foreach ($data['ProximaFechasCabecera'] as $r) { ?>
-                            <div class="fecha-texto2"><?php if($r->fecha_jue=="1900-01-00"){
-                                // $fecha_jue="";
-                                $fecha =$CI->obtenerFechaEnLetra($r->fecha);
-                                $fecha_aux=$r->fecha;
-                            }else{
-                                // $fecha="";                                
-                                $fecha=$CI->obtenerFechaEnLetra($r->fecha_jue);    
-                                $fecha_aux=$r->fecha_jue;                        
-                            }
-                                 echo $fecha; ?></div>
-                            <?php $ProximaFechas = $CI->getFechaProximas($r->NRO_FECHA, $r->id_subcat,$fecha_aux);
-                            foreach ($ProximaFechas as $row) { ?>
-                                <div class="partido">
-                                    <div class="hora"><?php echo $row->hora; ?></div>
-                                    <div class="escudo"><img src="<?php echo $row->logo_local; ?>"></div>
-                                    <div class="central">
-                                        <div class="central-superior">
-                                            <div class="nombre-local"><?php echo $row->equipo_local; ?></div>
-                                            <div class="versus"><a href="<?php echo base_url(); ?>partido/resumen/<?php echo $row->id; ?>">
-                                                    <?php echo $row->result_local . '-' . $row->result_visita; ?></a>
-                                            </div>
-                                            <div class="nombre-visita"><?php echo $row->equipo_visita; ?></div>
-                                        </div>
-                                        <div class="central-inferior">
-                                            <a href="<?php echo base_url(); ?>partido/resumen/<?php echo $row->id; ?>" class="link_partido">Resumen</a>
-                                        </div>
-                                    </div>
-                                    <div class="escudo"><img src="<?php echo $row->logo_visita; ?>"></div>
-                                </div>
-                            <?php }
-                    } ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <?php } ?>
-    </div>
-</div>
+            <!--NOTICIAS-->
+
+            <section class="container top-categories">
+				<h1 class="heading-1">Noticias</h1>
+				<div class="container-categories">
+					<div class="card-category category-moca">
+						<p>Noticias </p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-expreso">
+						<p>Noticias  </p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-capuchino">
+						<p>Noticias </p>
+						<span>Ver más</span>
+					</div>
+				</div>
+			</section>
+            <br><br><br><br>
+
 <script>
     $("#cbocategoria").change(function(e) {
         var id_cat = $("#cbocategoria").val();
