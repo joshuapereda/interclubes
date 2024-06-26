@@ -138,7 +138,7 @@ p{
           <?php foreach($data as $row): ?>
             <div class="col-md-3 mt-5">
                 <div class="card">
-                    <img src="public/img/goleadores.svg" alt="Imagen 1" class="card-img">
+                    <img src="<?php echo base_url(); ?>public/img/fotos/Fotos/<?php echo $row->foto; ?>" onerror="this.onerror=null; this.src='public/img/goleadores.svg'" alt="Imagen 1" class="card-img">
                     <div class="card-content">
                         <h4 class="card-title text-center"><?= $row->apellidos_nombres; ?></h4>
                         <p class="card-text"><?= $row->nombre_club; ?></p>

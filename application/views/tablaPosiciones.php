@@ -6,7 +6,7 @@
             color: #7A767A;}
         .card-header {padding: 0.05rem 1.05rem;}
         .font-medium{
-            font-size:0.85em;
+            font-size:0.45em;
         }
         .row-border{border-bottom:1px solid #f1f1f1;    margin-right: 0px;margin-left: 0px;}
         
@@ -15,6 +15,12 @@
         }
         .card-body .row:nth-of-type(even) div {
         background: #FFFFFF;
+        }
+        .font-xs{
+            font-size:0.4em; 
+        }
+        .tabla_posiciones{
+            font-family:Arial, Helvetica, sans-serif !important;
         }
 </style>
 <div class="contenedorr">
@@ -31,14 +37,13 @@
                 //var_dump($categoria);exit;
                    $tabla_posiciones = $CI->getTablePosicion($categoria->id);
                 ?><br>  
-                <div class="mt-5">
-                    <h4 class="text-center"><b>CATEGORÍA <?=  $categoria->categoria; ?></b><br>
-                    <h6 class="text-center"><b>TABLA DE POSICIONES CAT <?=  $categoria->categoria; ?></b> 
-                    <br><br><br>
+                <div class="mt-5 tabla_posiciones">
+                    <h4 class="text-center"><b>CATEGORÍA <?=  $categoria->categoria; ?></b><br>                    
+                    <br>
                     <div class="card-header bg-danger d-none d-sm-block">
                         <div class="row  font-medium text-white font-weight-bold">
                             <div class="col-md-1">POS.</div>
-                            <div class="col-md-3"><h5 style="font-size:1em;"><strong>EQUIPOS</strong></h5></div>
+                            <div class="col-md-3 p-0"><h5 style="font-size:1em;"><strong>EQUIPOS</strong></h5></div>
                             <div class="col-md-1">PJ</div>
                             <div class="col-md-1">PG</div>
                             <div class="col-md-1">PE</div>
@@ -49,11 +54,11 @@
                             <div class="col-md-1">PTS</div>
                         </div>
                     </div>
-                    <div class="card-body font-small p-0  mb-5 d-none d-sm-block">
+                    <div class="card-body font-xs p-0  mb-5 d-none d-sm-block tabla_posiciones">
                         <?php $pos = 0;  foreach ($tabla_posiciones as $row) :  ?>
                             <div class="row row-border">
                                 <div class="col-md-1 text-center"><?= ++$pos; ?></div>   
-                                <div class="col-md-3 text-left"><img width="35px" src="<?= $row->logo ?>"> <?= $row->Equipo ?></div>
+                                <div class="col-md-3 p-0 text-left"><img width="32.95px" src="<?= $row->logo ?>"> <label class="ml-1"><?= $row->Equipo ?></label></div>
                                 <div class="col-md-1"><?= $row->PJ ?></div>                                                                 
                                 <div class="col-md-1"><?= $row->PG ?></div>                                                                 
                                 <div class="col-md-1"><?= $row->PE ?></div>

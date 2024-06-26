@@ -187,7 +187,7 @@ class Home_model extends CI_Model
     }
     function getResultadosAll($nro_fecha,$id_categoria){
         $this->db->order_by('NRO_FECHA', 'ASC');
-        $this->db->select("programacion.id,TIME_FORMAT(cast(hora as time), '%H:%i') 'hora', cl.descripcion 'equipo_local',cv.descripcion 'equipo_visita',fecha,result_local,result_visita,cl.logo 'logo_local',cv.logo 'logo_visita'");
+        $this->db->select("programacion.id,TIME_FORMAT(cast(hora as time), '%h:%i %p') 'hora', cl.descripcion 'equipo_local',cv.descripcion 'equipo_visita',fecha,result_local,result_visita,cl.logo 'logo_local',cv.logo 'logo_visita'");
         $this->db->join('club cl', 'programacion.id_club_local = cl.id');
         $this->db->join('club cv', 'programacion.id_club_visita = cv.id');
         $this->db->where('id_subcat', $id_categoria);  

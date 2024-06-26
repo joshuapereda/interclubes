@@ -152,9 +152,7 @@
                                             </div>
                                             <div class="nombre-visita"><?php echo $row->equipo_visita; ?></div>
                                         </div>
-                                        <div class="central-inferior">
-                                            <a href="<?php echo base_url(); ?>partido/resumen/<?php echo $row->id; ?>" class="link_partido">Resumen</a>
-                                        </div>
+                                        
                                     </div>
                                     <div class="escudo"><img src="<?php echo $row->logo_visita; ?>"></div>
                                 </div>
