@@ -1091,3 +1091,6 @@ table, td, tr {
     background-color: transparent;
     border: none;
 }
+.text-basic{
+    color: #212529;
+}

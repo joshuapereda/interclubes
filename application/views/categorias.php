@@ -69,16 +69,17 @@
 </div>
 <br>
 <div class="container">
-  <?php foreach($data as $row): ?>
+<div class="row mb-5">
+<?php foreach ($data as $row): ?>
     
-    <div class="contenedorrr">
-    <a href="clubes?id_categoria=<?= $row->id_subcategoria; ?>">
-      <div class="textooo">
-        <h1 class="textooo-img cl"><?= $row->subcategoria; ?></h1>
-      </div>
-      <img src="public/img/login.jpg" alt="">
+    <div class="col-md-3 p-2 mb-2">
+      <div class="border">
+    <a class="p-5 text-center" href="clubes?id_categoria=<?= $row->id_subcategoria ?>">      
+        <h4 class="text-basic"><?= $row->subcategoria ?></h4>            
       </a>
     </div>
-   
+    </div>
   <?php endforeach; ?>
+</div>
+  
 </div>

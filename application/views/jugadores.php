@@ -14,7 +14,7 @@
 .card {
   width: calc(33.33% - 20px);
   width: 100%;
-  height: 400px;
+  height: 310px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 10px;
@@ -23,7 +23,7 @@
 
 .card-img {
   width: 100%;
-  height: auto;
+  height: 210px;
 }
 
 .card-content {
@@ -64,7 +64,7 @@
   color: #fff;
 }
 h4{
-    font-size: 19px;
+    font-size: 15px;
     
 }
 p{
@@ -79,6 +79,7 @@ p{
           }
           .card {            
             margin-bottom: 20px;
+            height:auto;
           }
           h4{
             font-size: 20px;
@@ -136,12 +137,11 @@ p{
     <div class="card-container">
         <div class="row">
           <?php foreach($data as $row): ?>
-            <div class="col-md-3 mt-5">
+            <div class="col-md-2 mt-5 p-2">
                 <div class="card">
                     <img src="<?php echo base_url(); ?>public/img/fotos/Fotos/<?php echo $row->foto; ?>" onerror="this.onerror=null; this.src='public/img/goleadores.svg'" alt="Imagen 1" class="card-img">
                     <div class="card-content">
-                        <h4 class="card-title text-center"><?= $row->apellidos_nombres; ?></h4>
-                        <p class="card-text"><?= $row->nombre_club; ?></p>
+                        <h4 class="card-title text-center"><?= $row->apellidos_nombres; ?></h4>                        
                     </div>
                 </div>
             </div>
